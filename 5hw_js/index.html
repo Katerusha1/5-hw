@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .attention{
+        font-size: 45px;
+        color: blue;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <!-- 1- поиск по id -->
+    <!-- <a  id = "one" href="">1</a>
+    <a id = "two" href="">2</a>
+    <a  href="">3</a>
+    <a href="">4</a>
+    <script> 
+    "use srtict";
+      let one = document.getElementById ('one');
+      console.log(one);
+      console.dir(one);
+      let two = document.getElementById ('two');
+      console.log(two);
+      console.dir(two);
+     </script> -->
+  
+     <!-- 2- поиск по имени класса  
+    <div class="logo">
+      <h1 class=" title">Me favorite toy is train</h1> <br>
+        <img src="./image/train.png" alt="error">
+        <p class="logo">описание игрушки</p>
+        <p> назначение игрушки</p>
+        <p> возраст ребенка</p>
+    </div>
+    <script> 
+    "use srtict";
+      let logotip = document.getElementsByClassName ("logo");
+      console.log(logotip);
+      </script>
+   
+      3- поиск всех элементов по селектору 
+    <form action="sunday">
+      <input type="text" value = "threebananas">
+      <input type="password" value="don't_worry">
+      <button>Send</button>
+    </form>
+    <script> 
+    "use srtict";
+      let inputs = document.querySelectorAll('form[action="sunday"] input') ;
+
+      console.log(inputs);
+
+      for(let i = 0; i <inputs.length; i++) {
+        console.log(inputs[i].value);
+      }
+
+      inputs.forEach(function(input){
+        console.log(input.type);
+      }); -->
+  
+  
+   <!-- 4- поиск одного элемента по селектору 
+
+    <div class="car">
+      <h1>mazda</h1>
+    </div>
+    <div class="car">
+      <h1>nissan</h1>
+    </div>
+    <div class="car">
+      <h1>hendaye</h1>
+    </div>
+    <div class="car">
+      <h1>lada</h1>
+    </div>
+    
+    <script> 
+    "use srtict";
+      let cars = document.querySelector(".car") ;
+
+      console.log(cars);
+     </script>  -->
+  
+ <!-- 2.1.1 получение картинок в консоль -->
+
+    <!-- <img src="./image/cat_1.jpg" alt="cat_1">
+    <img src="./image/cat_2.jpg" alt="cat_2">
+    <img src="./image/train.png" alt="train">
+
+    
+    <script> 
+    "use srtict";
+      let images = document.images;
+
+      console.dir(images);
+     </script> -->
+
+
+ <!-- 2.2.1 получение родительского узла  -->
+
+    <!-- <div class="animals">
+      <div class="red_cat">"Маленький рыжий котенок"</div>
+      <img src="./image/cat_1.jpg" alt="cat_2">
+      <p>С утра пригревало теплое солнышко. Маленький рыжий котенок играл в саду.</p>
+    </div>
+    
+    <script> 
+    "use srtict";
+      let animalName = document.querySelector('.red_cat');
+      console.log(animalName.parentNode);
+      
+    </script> -->
+
+<!-- 2.2.2 получение детского узла  -->
+
+    <!-- <div class="animals">
+      <div class="red_cat">"Маленький рыжий котенок"</div>
+      
+       <img src="./image/cat_1.jpg" alt="cat_2">
+      <p> У меня есть друг — котенок, Как и я — еще ребенок! </p>
+      <p>Кот Василий очень любит свежую траву.</p>
+      <p>С утра пригревало теплое солнышко. Маленький рыжий котенок играл в саду.</p>
+    </div>
+    
+    <script> 
+    "use srtict";
+      let ani = document.querySelector('.animals');
+      console.log(ani.childNodes);
+      
+    </script>  -->
+
+   <!-- 2.2.1.2 вывод имени тега  -->
+
+    <!-- <div class="animals">
+      <div class="red_cat">"Маленький рыжий котенок"</div>
+      
+       <img src="./image/cat_1.jpg" alt="cat_2">
+      <p> У меня есть друг — котенок, Как и я — еще ребенок! </p>
+      <p>Кот Василий очень любит свежую траву.</p>
+      <p>С утра пригревало теплое солнышко. Маленький рыжий котенок играл в саду.</p>
+    </div>
+    
+    <script> 
+    "use srtict";
+      let ani = document.querySelector('.animals');
+      console.log(ani.children);
+   </script>   -->
+
+ <!-- 2.2.4 замена текста
+
+   <div>
+     Жили-были старик и баба и жила у них курочка ряба. 
+   </div>
+    
+   <script> 
+    "use srtict";
+      let div = document.querySelector('div');
+      console.log(div.textContent);
+
+   // div.textContent = "Абра Катабра" /*замена текста**/
+      
+   </script> 
+
+  1.2.2-добавление элемента с appendchild  -->
+
+    <!-- <script> 
+    "use srtict";
+      let paragraph = document.createElement("p");
+      document.body.appendChild(paragraph);
+      paragraph.innerText = "hello friend";
+      
+    </script>   -->
+
+    <!-- 1.2.3. удаление узлов
+
+     <h1>Текст песни LeTai - Свободный</h1>
+
+    <script> 
+    "use srtict";
+      let text = document.querySelector("h1");
+      text.remove();
+      
+    </script>   -->
+
+ <!-- 1.3.4- удобная вставка  -->
+
+     <!-- <p id="one"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+       <i> hello</i>
+     </p>
+
+     <script>
+       "use strict";
+        let p = document.getElementById("one");
+        p.innerHTML = "<u>world</u>";
+     </script> -->
+
+<!-- <button>
+       Кнопка
+     </button>
+
+     <script>
+       "use strict";
+       let button = document.querySelector("button");
+       let p = document.createElement("p");
+       p.innerText = "paragraph";
+       button.insertAdjacentElement("beforebegin",p);
+     </script> -->
+
+<!-- 1.3.- добавление, удаление класса, toggle  -->
+     <!-- <button class="threebanana strawberry"> click me
+
+     </button>
+     <script>
+       "use strict";
+       let banan = document.querySelector("button");
+       console.log(banan.classList); 
+       console.log(banan.className);
+
+       banan.classList.add("people");
+       banan.classList.remove('threebanana');
+       banan.classList.toggle('strawberry');
+       banan.classList.toggle('strawberry');
+       console.log(banan.classList.contains("strawberry"));
+      
+     </script> -->
+
+    <!-- 1.3.- замена id -->
+      <!-- <h1 id = " my_favourite"> My favourite sport is football
+
+      </h1>
+     <script>
+       "use strict";
+       let header = document.querySelector("h1");
+       console.log(header.id);
+       header.id = "newID";
+      
+     </script> -->
+ 
+  <!-- 1.3.- получение атрибута -->
+     <!-- <div class="toys" delivery = "russian"> 
+        <ol>
+          <li>ball</li>
+          <li>doll</li>
+          <li>train</li>
+          <li>bear</li>
+          <li>car</li>
+        </ol>
+     </div>
+     <script>
+       "use strict";
+       let game = document.querySelector(".toys");
+       console.log(game.getAttribute("delivery"));
+       console.log(game.getAttribute("class"));
+       game.setAttribute("id","last");
+      </script> -->
+
+ <!-- 1.4..- событие загрузки
+      
+      <img src="https://placeimg.com/6400/4800/nature" alt="">
+
+
+     <script>
+       "use strict";
+
+       document.addEventListener("DOMContentLoaded", function(){
+         console.log("html загружен, возможно не загружена картинка")
+
+       });
+
+      window.addEventListener("load", function (){
+        console.log("все загружено");
+      });
+     
+     </script> -->
+   
+   <!-- 1.4..- событие мыши -->
+   <!-- <a href="#">Смена настроения</a>
+       
+    <script>
+       "use strict";
+       let line = document.querySelector('a');
+       line.addEventListener("click", function (){
+         console.log("click");
+         });
+        </script>  -->
+
+<!-- <a href="#">Смена настроения</a>
+      
+      <script>
+       "use strict";
+       let line = document.querySelector('a');
+       line.addEventListener("click", function (event){
+         console.log("click");
+         console.dir(event);
+         });
+        </script>  -->
+
+ <!-- <a href="#">Смена настроения</a>
+      <script>
+       "use strict";
+        let line = document.querySelector('a');
+        line.addEventListener("mouseover", function (event){
+         console.log("mouseover");
+         console.dir(event);
+      </script>   
+       });
+ 
+      2.2.5 всплытие события
+
+   <div>
+     Вино из одуванчиков. 
+     <p>Рей Бредберри
+       <button> жми</button>
+     </p>
+   </div>
+  <script>
+       "use strict";
+      document.querySelector("button").addEventListener("click",function(event){
+      console.log(event);
+      console.log(event.currentTarget);
+      console.log(event.target);
+    });
+      document.querySelector("p").addEventListener("click",function(event){
+      console.log(event);
+      console.log(event.currentTarget);
+      console.log(event.target);
+    });
+      document.querySelector("div").addEventListener("click",function(event){
+      console.log(event);
+      console.log(event.currentTarget);
+      console.log(event.target);
+    });
+  </script> 
+
+   2.2.5 всплытие события
+   <button> жми</button>
+    
+    <script>
+       "use strict";
+
+       let button = document.querySelector ("button");
+
+       function clickHandler(event){
+         alert("hello");
+       }
+
+       button.addEventListener ("click",clickHandler);
+       setTimeout(function(){
+         button.removeEventListener("click",clickHandler);
+       },7000);
+
+    </script> 
+
+  2.3.3  inline style  
+
+     
+   <h1>Раз - два - три , Елочка гори!!!
+    </h1>
+      <button>
+        Выключай
+      </button>
+    
+     <script>
+      "use strict";
+    let h = document.querySelector("h1");
+    h.classList.add("attention");
+
+    document.querySelector("button").addEventListener("click", function(){
+      h.classList.remove("attention");
+    })
+    </script>
+      -->
+<script src="./1.js"></script>
+  </body>
+</html
